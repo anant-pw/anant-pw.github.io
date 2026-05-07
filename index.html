@@ -3,70 +3,103 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Anant Jain – QA & Automation Engineer</title>
+<title>Anant Jain – SDET & Automation Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Segoe UI',Arial,sans-serif;background:#fafaf8;color:#1a1a18;line-height:1.6}
-  a{color:inherit;text-decoration:none}
-  .nav{position:sticky;top:0;background:rgba(250,250,248,0.92);backdrop-filter:blur(8px);border-bottom:0.5px solid #d3d1c7;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:56px;z-index:100}
-  .nav-name{font-size:15px;font-weight:500;letter-spacing:-.01em}
-  .nav-links{display:flex;gap:24px;font-size:13px;color:#5f5e5a}
-  .nav-links a:hover{color:#1a1a18}
-  .hero{padding:80px 10% 72px;max-width:900px;margin:0 auto}
-  .hero-tag{font-size:12px;font-weight:500;letter-spacing:.08em;color:#888780;text-transform:uppercase;margin-bottom:16px}
-  .hero h1{font-size:clamp(28px,4vw,42px);font-weight:500;line-height:1.2;letter-spacing:-.02em;margin-bottom:20px;color:#1a1a18}
-  .hero h1 em{font-style:normal;color:#5f5e5a}
-  .hero-sub{font-size:16px;color:#5f5e5a;max-width:580px;margin-bottom:32px;line-height:1.7}
-  .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px}
-  .badge{font-size:12px;padding:4px 12px;border-radius:20px;border:0.5px solid #d3d1c7;color:#5f5e5a;background:#fff}
-  .badge.accent{background:#1a1a18;color:#fafaf8;border-color:#1a1a18}
-  .btn-row{display:flex;gap:12px;flex-wrap:wrap}
-  .btn{font-size:13px;font-weight:500;padding:10px 20px;border-radius:8px;border:0.5px solid #d3d1c7;cursor:pointer;transition:all .15s;background:#fff;color:#1a1a18;display:inline-block}
-  .btn:hover{background:#f1efe8;border-color:#b4b2a9}
-  .btn.primary{background:#1a1a18;color:#fafaf8;border-color:#1a1a18}
-  .btn.primary:hover{background:#2c2c2a}
-  section{padding:56px 10%;max-width:900px;margin:0 auto;border-top:0.5px solid #e8e6df}
-  .section-label{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#888780;margin-bottom:28px}
-  .projects{display:grid;gap:20px}
-  .project-card{background:#fff;border:0.5px solid #d3d1c7;border-radius:12px;padding:24px 28px;transition:border-color .15s}
-  .project-card:hover{border-color:#888780}
-  .project-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px}
-  .project-title{font-size:16px;font-weight:500;line-height:1.3}
-  .project-status{font-size:11px;padding:3px 10px;border-radius:20px;white-space:nowrap;margin-top:3px;flex-shrink:0}
-  .status-live{background:#eaf3de;color:#3b6d11;border:0.5px solid #c0dd97}
-  .status-wip{background:#faeeda;color:#854f0b;border:0.5px solid #fac775}
-  .project-subtitle{font-size:13px;color:#888780;margin-bottom:12px;font-style:italic}
-  .project-desc{font-size:14px;color:#5f5e5a;margin-bottom:14px;line-height:1.65}
-  .project-features{margin-bottom:16px}
-  .project-features li{font-size:13px;color:#5f5e5a;padding-left:14px;position:relative;line-height:1.6;margin-bottom:3px;list-style:none}
-  .project-features li::before{content:"→";position:absolute;left:0;color:#b4b2a9;font-size:11px;top:2px}
-  .project-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
-  .tag{font-size:11px;padding:3px 9px;border-radius:4px;background:#f1efe8;color:#444441}
-  .project-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#888780;border:0.5px solid #d3d1c7;border-radius:6px;padding:6px 12px;transition:all .15s}
-  .project-link:hover{border-color:#888780;color:#1a1a18}
-  .project-link svg{width:14px;height:14px;opacity:.6}
-  .highlights{display:grid;gap:12px}
-  .highlight{display:flex;gap:16px;align-items:flex-start;padding:16px 20px;background:#fff;border:0.5px solid #d3d1c7;border-radius:10px}
-  .h-icon{width:36px;height:36px;border-radius:8px;background:#f1efe8;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
-  .h-title{font-size:14px;font-weight:500;margin-bottom:2px}
-  .h-sub{font-size:13px;color:#5f5e5a}
-  .jobs{display:grid;gap:0}
-  .job{display:grid;grid-template-columns:140px 1fr;gap:0 24px;padding:20px 0;border-bottom:0.5px solid #f1efe8}
-  .job:last-child{border-bottom:none}
-  .job-dates{font-size:12px;color:#888780;padding-top:3px}
-  .job-co{font-size:14px;font-weight:500;margin-bottom:2px}
-  .job-role{font-size:13px;color:#5f5e5a;margin-bottom:6px}
-  .job-pts{list-style:none;padding:0}
-  .job-pts li{font-size:13px;color:#5f5e5a;padding-left:14px;position:relative;line-height:1.55;margin-bottom:4px}
-  .job-pts li::before{content:"–";position:absolute;left:0;color:#b4b2a9}
-  .contact-row{display:flex;flex-wrap:wrap;gap:12px}
-  .contact-item{display:flex;align-items:center;gap:8px;font-size:14px;color:#5f5e5a;background:#fff;border:0.5px solid #d3d1c7;border-radius:8px;padding:10px 16px}
-  .contact-item svg{width:16px;height:16px;opacity:.5;flex-shrink:0}
-  .divider{height:0.5px;background:#e8e6df;margin:32px 0}
-  footer{text-align:center;padding:32px;font-size:12px;color:#b4b2a9;border-top:0.5px solid #e8e6df}
-  @media(max-width:600px){
-    .job{grid-template-columns:1fr}
-    .job-dates{margin-bottom:4px}
+  :root {
+    --bg: #f7f5f0; --surface: #ffffff; --border: #e2ded5; --border-soft: #ede9e2;
+    --ink: #1c1b18; --ink-2: #5a5750; --ink-3: #9a9690;
+    --accent: #1c1b18; --accent-fg: #f7f5f0;
+    --green-bg: #eef5e8; --green-ink: #386318; --green-border: #c1d9a8;
+    --blue-bg: #e8f0fb; --blue-ink: #1a3f8f; --blue-border: #aac3f0;
+    --tag-bg: #edeae3;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+
+  .nav { position: sticky; top: 0; z-index: 100; background: rgba(247,245,240,0.93); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 0 6%; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-name { font-family: var(--serif); font-size: 17px; }
+  .nav-links { display: flex; gap: 28px; font-size: 13px; color: var(--ink-2); }
+  .nav-links a:hover { color: var(--ink); }
+
+  .hero { padding: 88px 6% 72px; max-width: 860px; margin: 0 auto; animation: fadeUp .6s ease both; }
+  .hero-tag { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 20px; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(34px,5vw,54px); font-weight: 400; line-height: 1.15; letter-spacing: -.02em; margin-bottom: 22px; }
+  .hero h1 em { font-style: italic; color: var(--ink-2); }
+  .hero-sub { font-size: 16px; color: var(--ink-2); max-width: 580px; margin-bottom: 32px; line-height: 1.75; font-weight: 300; }
+  .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
+  .badge { font-size: 12px; padding: 5px 13px; border-radius: 100px; border: 1px solid var(--border); color: var(--ink-2); background: var(--surface); }
+  .badge.accent { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { font-size: 13px; font-weight: 500; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--ink); display: inline-block; transition: all .15s; }
+  .btn:hover { background: var(--border-soft); border-color: var(--ink-3); }
+  .btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .btn.primary:hover { background: #333; }
+
+  section { padding: 60px 6%; max-width: 860px; margin: 0 auto; border-top: 1px solid var(--border-soft); }
+  .section-label { font-size: 10px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 32px; }
+  .section-note { font-size: 13px; color: var(--ink-3); font-style: italic; margin-top: -20px; margin-bottom: 28px; font-weight: 300; }
+
+  .jobs { display: grid; gap: 0; }
+  .job { display: grid; grid-template-columns: 150px 1fr; gap: 0 24px; padding: 28px 0; border-bottom: 1px solid var(--border-soft); }
+  .job:last-child { border-bottom: none; }
+  .job-dates { font-size: 12px; color: var(--ink-3); padding-top: 2px; line-height: 1.6; }
+  .job-co { font-size: 15px; font-weight: 500; margin-bottom: 2px; font-family: var(--serif); }
+  .job-domain { font-size: 11px; color: var(--ink-3); margin-bottom: 4px; text-transform: uppercase; letter-spacing: .06em; }
+  .job-role { font-size: 13px; color: var(--ink-2); margin-bottom: 12px; }
+  .job-pts { list-style: none; padding: 0; }
+  .job-pts li { font-size: 13px; color: var(--ink-2); padding-left: 14px; position: relative; line-height: 1.65; margin-bottom: 6px; font-weight: 300; }
+  .job-pts li::before { content: "–"; position: absolute; left: 0; color: var(--ink-3); }
+  .job-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .job-tool { font-size: 11px; padding: 3px 9px; border-radius: 4px; background: var(--tag-bg); color: var(--ink-2); }
+
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .skill-group { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .skill-group-title { font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 10px; }
+  .skill-list { list-style: none; }
+  .skill-list li { font-size: 13px; color: var(--ink-2); padding: 3px 0; font-weight: 300; border-bottom: 1px solid var(--border-soft); }
+  .skill-list li:last-child { border-bottom: none; }
+
+  .projects { display: grid; gap: 16px; }
+  .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 26px 30px; transition: border-color .2s, box-shadow .2s; animation: fadeUp .5s ease both; }
+  .project-card:nth-child(1){animation-delay:.05s}.project-card:nth-child(2){animation-delay:.10s}.project-card:nth-child(3){animation-delay:.15s}
+  .project-card:hover { border-color: var(--ink-3); box-shadow: 0 4px 20px rgba(0,0,0,.06); }
+  .project-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+  .project-title { font-family: var(--serif); font-size: 17px; font-weight: 400; line-height: 1.3; }
+  .project-status { font-size: 10px; font-weight: 500; padding: 3px 10px; border-radius: 100px; white-space: nowrap; margin-top: 4px; flex-shrink: 0; letter-spacing: .04em; }
+  .status-live { background: var(--green-bg); color: var(--green-ink); border: 1px solid var(--green-border); }
+  .status-ai { background: var(--blue-bg); color: var(--blue-ink); border: 1px solid var(--blue-border); }
+  .project-subtitle { font-size: 13px; color: var(--ink-3); margin-bottom: 12px; font-style: italic; }
+  .project-desc { font-size: 14px; color: var(--ink-2); margin-bottom: 14px; line-height: 1.7; font-weight: 300; }
+  .project-features { margin-bottom: 16px; list-style: none; }
+  .project-features li { font-size: 13px; color: var(--ink-2); padding-left: 16px; position: relative; line-height: 1.6; margin-bottom: 4px; font-weight: 300; }
+  .project-features li::before { content: "→"; position: absolute; left: 0; color: var(--ink-3); font-size: 11px; top: 3px; }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+  .tag { font-size: 11px; padding: 3px 10px; border-radius: 4px; background: var(--tag-bg); color: var(--ink-2); }
+  .project-links { display: flex; gap: 10px; flex-wrap: wrap; }
+  .project-link { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: var(--ink-2); border: 1px solid var(--border); border-radius: 7px; padding: 7px 14px; transition: all .15s; }
+  .project-link:hover { border-color: var(--ink-3); color: var(--ink); }
+  .project-link.demo { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .project-link.demo:hover { background: #333; }
+  .project-link svg { width: 13px; height: 13px; opacity: .7; flex-shrink: 0; }
+
+  .contact-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .contact-item { display: flex; align-items: center; gap: 9px; font-size: 13px; color: var(--ink-2); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 16px; transition: border-color .15s; }
+  .contact-item:hover { border-color: var(--ink-3); color: var(--ink); }
+  .contact-item svg { width: 15px; height: 15px; opacity: .5; flex-shrink: 0; }
+
+  footer { text-align: center; padding: 32px; font-size: 12px; color: var(--ink-3); border-top: 1px solid var(--border-soft); }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 600px) {
+    .job { grid-template-columns: 1fr; } .job-dates { margin-bottom: 6px; }
+    .hero { padding: 56px 5% 48px; } section { padding: 48px 5%; }
+    .project-card { padding: 22px 20px; } .skills-grid { grid-template-columns: 1fr 1fr; }
   }
 </style>
 </head>
@@ -75,23 +108,25 @@
 <nav class="nav">
   <span class="nav-name">Anant Jain</span>
   <div class="nav-links">
-    <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="hero">
-  <p class="hero-tag">QA &amp; Automation Engineer &nbsp;·&nbsp; ISTQB Certified &nbsp;·&nbsp; 10+ Years</p>
-  <h1>Quality engineering,<br/><em>now with AI.</em></h1>
-  <p class="hero-sub">I test, automate, and build QA systems — from regression frameworks and CI/CD pipelines to AI-augmented agents that self-navigate and self-heal. Currently exploring where LLMs can genuinely reduce testing overhead.</p>
+  <p class="hero-tag">SDET &amp; Automation Engineer &nbsp;·&nbsp; ISTQB Certified &nbsp;·&nbsp; 14+ Years</p>
+  <h1>Test automation at scale,<br/><em>now with AI.</em></h1>
+  <p class="hero-sub">I build automation frameworks, own QA strategy, and integrate testing into CI/CD pipelines. Over the last year I've been applying LLMs to QA — autonomous crawling, self-healing agents, and LLM evaluation frameworks.</p>
   <div class="hero-badges">
     <span class="badge accent">ISTQB Certified</span>
-    <span class="badge">Selenium · Playwright</span>
-    <span class="badge">LangChain · LLMs</span>
-    <span class="badge">CI/CD · Jenkins · GitHub Actions</span>
+    <span class="badge">Playwright · Selenium</span>
     <span class="badge">Python · Java</span>
+    <span class="badge">Jenkins · GitHub Actions</span>
+    <span class="badge">LangChain · Groq</span>
     <span class="badge">API Testing</span>
+    <span class="badge">Agile · Shift-Left</span>
   </div>
   <div class="btn-row">
     <a href="https://www.linkedin.com/in/anant-jain-40760719/" target="_blank"><span class="btn primary">LinkedIn ↗</span></a>
@@ -100,186 +135,204 @@
   </div>
 </div>
 
-<section id="projects">
-  <p class="section-label">AI & Automation Projects</p>
-  <div class="projects">
-
-    <!-- Playwright + Groq — FIRST project (earlier, simpler) -->
-    <div class="project-card">
-      <div class="project-header">
-        <div class="project-title">AI Autonomous Testing Framework</div>
-        <span class="project-status status-live">Live</span>
-      </div>
-      <p class="project-subtitle">Autonomous bug detection & test case generation via LLM-guided browser crawl</p>
-      <p class="project-desc">A zero-script AI testing agent that crawls any web application, detects bugs intelligently, and auto-generates test cases — without a single manually written selector. The LLM decides what to explore next; Playwright executes it.</p>
-      <ul class="project-features">
-        <li>Auto-login detection — handles Cloudflare, multi-step login, SSO, cookie banners</li>
-        <li>Smart crawl prioritises checkout, auth, and form pages first</li>
-        <li>Signal-gated bug detection — LLM only fires when real errors exist (console errors, failed XHR, DOM issues)</li>
-        <li>Generates 5 contextual test cases per page based on actual UI elements, saved to Excel</li>
-        <li>API testing layer captures all XHR/fetch calls during crawl and tests each endpoint</li>
-        <li>Self-healing actions with up to 5 fallback strategies when selectors shift</li>
-        <li>Supports Groq (cloud, fast) and Ollama (fully local) — hybrid mode routes text to Groq, vision to llava</li>
-        <li>Allure reports auto-open with bugs, screenshots, and test cases</li>
-      </ul>
-      <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">Groq</span><span class="tag">Ollama</span><span class="tag">llava (vision)</span><span class="tag">Allure</span><span class="tag">LLM agents</span><span class="tag">API testing</span>
-      </div>
-      <a class="project-link" href="https://github.com/anant-pw/playwright-groq-framework" target="_blank">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        View on GitHub
-      </a>
-    </div>
-
-    <!-- Sentinel QA — SECOND project (advanced evolution) -->
-    <div class="project-card">
-      <div class="project-header">
-        <div class="project-title">Sentinel QA — Human-in-the-Loop (HITL) AI Test Framework</div>
-        <span class="project-status status-live">Live</span>
-      </div>
-      <p class="project-subtitle">Requirements → approved test plans → AI execution → Jira triage — with a human in the loop</p>
-      <p class="project-desc">Sentinel takes unstructured requirements and turns them into executed, reported, and triaged test cases — end to end. A RequirementAnalyst agent (LangChain LCEL + SambaNova Llama 3.3 70B) converts requirements to JSON test plans, stores them via FastAPI + SQLite, and presents them in a Streamlit approval portal. Once approved, pytest + Playwright execute the plan. Failures trigger an AI BugReporter that opens Jira tickets with screenshots attached and appends analysis to Allure reports.</p>
-      <ul class="project-features">
-        <li>RequirementAnalyst agent converts plain-text requirements into structured JSON test plans via LangChain LCEL</li>
-        <li>Streamlit Human-in-the-Loop portal — humans review and approve plans before any test runs</li>
-        <li>FastAPI + SQLite backend stores plans, results, and AI memory across runs</li>
-        <li>LLM provider failover: SambaNova → Groq → Ollama (swap with one config line)</li>
-        <li>BugReporter agent triages failures with DB-backed pattern memory, opens Jira tickets + screenshots</li>
-        <li>Parallel execution via pytest-xdist; Allure reports with AI bug analysis attached per failure</li>
-        <li>ActionRegistry pattern replaces page-object models — Playwright actions driven by AI decisions</li>
-      </ul>
-      <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">LangChain LCEL</span><span class="tag">SambaNova</span><span class="tag">Groq</span><span class="tag">Ollama</span><span class="tag">FastAPI</span><span class="tag">SQLite</span><span class="tag">Streamlit</span><span class="tag">pytest-xdist</span><span class="tag">Jira API</span><span class="tag">Allure</span>
-      </div>
-      <a class="project-link" href="https://github.com/anant-pw/sentinal_qa_phase3" target="_blank">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        View on GitHub
-      </a>
-    </div>
-   <!-- VerdictAI — THIRD project -->
-<div class="project-card">
-  <div class="project-header">
-    <div class="project-title">VerdictAI — LLM Evaluation Framework</div>
-    <span class="project-status status-live">Live</span>
-  </div>
-
-  <p class="project-subtitle">
-    Systematic, multi-judge evaluation of LLM outputs with hallucination detection & regression tracking
-  </p>
-
-  <p class="project-desc">
-    VerdictAI is an end-to-end evaluation framework for LLMs that replaces subjective prompt testing with structured, repeatable validation. It runs YAML-defined test suites, scores responses using parallel LLM judges, detects hallucinations via claim verification, and tracks regressions across runs — all visualised in a Streamlit dashboard.
-  </p>
-
-  <ul class="project-features">
-    <li>YAML-driven test suites for hallucination, safety, format, and RAG evaluation</li>
-    <li>Multi-judge scoring (Groq + Cerebras) with consensus and disagreement detection</li>
-    <li>Hallucination detection via claim extraction + batched verification (~60% fewer tokens)</li>
-    <li>Relevance scoring using sentence-transformers cosine similarity</li>
-    <li>Regression tracking across runs with automatic score drop detection</li>
-    <li>Streamlit dashboard with per-test drill-down and score distributions</li>
-    <li>SQLite-backed history + JSONL logs + Allure reporting integration</li>
-    <li>Jira auto-ticket creation for failing test cases</li>
-  </ul>
-
-  <div class="project-tags">
-    <span class="tag">Python</span>
-    <span class="tag">LLM Evaluation</span>
-    <span class="tag">Groq</span>
-    <span class="tag">Cerebras</span>
-    <span class="tag">LangChain</span>
-    <span class="tag">Streamlit</span>
-    <span class="tag">SQLite</span>
-    <span class="tag">Allure</span>
-    <span class="tag">AI Testing</span>
-  </div>
-
-  <a class="project-link" href="https://github.com/anant-pw/verdictai" target="_blank">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-    </svg>
-    View on GitHub
-  </a>
-</div>
-
-  </div>
-</section>
-
-<section>
-  <p class="section-label">What I work on</p>
-  <div class="highlights">
-    <div class="highlight">
-      <div class="h-icon">⚙️</div>
-      <div>
-        <p class="h-title">Test automation & frameworks</p>
-        <p class="h-sub">Selenium, Playwright, pytest — building and maintaining regression suites, integrated into CI/CD pipelines end to end.</p>
-      </div>
-    </div>
-    <div class="highlight">
-      <div class="h-icon">🤖</div>
-      <div>
-        <p class="h-title">AI-augmented QA</p>
-        <p class="h-sub">LLM-guided crawling, self-healing locators, AI bug triage, and requirement-to-test-plan pipelines using LangChain and open-source models.</p>
-      </div>
-    </div>
-    <div class="highlight">
-      <div class="h-icon">🔗</div>
-      <div>
-        <p class="h-title">API & contract testing</p>
-        <p class="h-sub">REST API validation with Postman and Rest Assured; API contract checks and endpoint testing captured during live crawls.</p>
-      </div>
-    </div>
-    <div class="highlight">
-      <div class="h-icon">📋</div>
-      <div>
-        <p class="h-title">Release planning & quality metrics</p>
-        <p class="h-sub">Test scoping, risk identification, defect triage governance, and stakeholder-facing quality reports.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="experience">
   <p class="section-label">Experience</p>
   <div class="jobs">
 
     <div class="job">
-      <div><p class="job-dates">Sept 2016 – Mar 2026</p></div>
       <div>
+        <p class="job-dates">Sept 2016 – Mar 2026</p>
+        <p class="job-dates" style="margin-top:4px">9.5 years</p>
+      </div>
+      <div>
+        <p class="job-domain">Career Technology · SaaS</p>
         <p class="job-co">BOLD Technologies Ltd</p>
-        <p class="job-role">Principal QA Engineer / Senior QA Automation Engineer</p>
+        <p class="job-role">Principal QA Engineer / QA Lead — Automation</p>
         <ul class="job-pts">
-          <li>Owned QA strategy across multiple Agile teams — regression scope, automation candidacy, and quality metrics per release cycle.</li>
-          <li>Built and maintained Selenium and Playwright automation frameworks; integrated into Jenkins and GitHub Actions CI/CD pipelines.</li>
-          <li>Validated REST API services using Postman and Rest Assured during feature and release validation.</li>
-          <li>Standardised defect triage and tracking process across all teams in Jira; used resolution data to build release health reports.</li>
-          <li>Contributed to test planning, risk documentation, and QA strategy for major releases.</li>
-          <li>Participated in team knowledge-sharing sessions, hiring, and onboarding of QA engineers.</li>
+          <li>Led QA automation for a mid-size Agile team across multiple squads — owned regression scope, automation candidacy decisions, and sprint quality metrics per release cycle.</li>
+          <li>Built and maintained Selenium (Java) and Playwright (Python) automation frameworks from scratch; integrated into Jenkins and GitHub Actions CI/CD pipelines with full reporting.</li>
+          <li>Introduced shift-left testing practices — brought QA into requirements and design phases, reducing defect escape to production.</li>
+          <li>Automated regression coverage across resume builder, cover letter, and career tool modules — significantly reduced manual regression effort per sprint.</li>
+          <li>Validated REST API services using Postman; designed test plans covering functional, integration, and regression scenarios.</li>
+          <li>Standardised defect triage process across teams in Jira; built release health dashboards used by stakeholders for go/no-go decisions.</li>
+          <li>Managed TestLink test repository — maintained 500+ test cases across modules with full requirements traceability.</li>
+          <li>Mentored junior QA engineers; represented QA across sprint planning, retrospectives, and release demos.</li>
         </ul>
+        <div class="job-tools">
+          <span class="job-tool">Selenium</span><span class="job-tool">Playwright</span><span class="job-tool">Java</span><span class="job-tool">Python</span><span class="job-tool">Jenkins</span><span class="job-tool">GitHub Actions</span><span class="job-tool">Postman</span><span class="job-tool">Jira</span><span class="job-tool">TestLink</span><span class="job-tool">Agile / Scrum</span>
+        </div>
       </div>
     </div>
 
     <div class="job">
-      <div><p class="job-dates">Sept 2011 – Sept 2016</p></div>
       <div>
+        <p class="job-dates">Sept 2011 – Sept 2016</p>
+        <p class="job-dates" style="margin-top:4px">5 years</p>
+      </div>
+      <div>
+        <p class="job-domain">IT Services · Multi-domain</p>
         <p class="job-co">Optimus Information Inc</p>
         <p class="job-role">Senior Software Test Engineer</p>
         <ul class="job-pts">
-          <li>Functional, regression, integration, and API testing across web and mobile application platforms.</li>
+          <li>Functional, regression, integration, and API testing across web and mobile platforms for multiple client products.</li>
           <li>REST API validation via Postman; defect triage and requirements clarification in Agile sprints.</li>
-          <li>Supported automation initiatives — maintained and executed scripts within existing frameworks.</li>
+          <li>Supported automation initiatives — maintained and extended scripts within existing frameworks.</li>
         </ul>
+        <div class="job-tools">
+          <span class="job-tool">Manual Testing</span><span class="job-tool">Postman</span><span class="job-tool">Jira</span><span class="job-tool">Agile</span>
+        </div>
       </div>
     </div>
 
   </div>
+</section>
 
-  <div class="divider"></div>
-  <p class="section-label" style="margin-bottom:16px">Project Highlights</p>
-  <div class="highlights">
-    <div class="highlight"><div class="h-icon">📄</div><div><p class="h-title">Resume & Cover Letter Builder</p><p class="h-sub">Validated core user workflows; expanded automated regression coverage for critical build flows.</p></div></div>
-    <div class="highlight"><div class="h-icon">🍔</div><div><p class="h-title">Online Food Order Application</p><p class="h-sub">E2E testing — UI and API validation for ordering and payment workflows.</p></div></div>
-    <div class="highlight"><div class="h-icon">🏥</div><div><p class="h-title">Insurance Plan Website</p><p class="h-sub">Tested retirement planning modules; optimised regression scope to cut execution time.</p></div></div>
+<section id="skills">
+  <p class="section-label">Skills</p>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <p class="skill-group-title">Automation</p>
+      <ul class="skill-list">        
+        <li>Playwright</li>
+		<li>Selenium WebDriver</li>
+        <li>pytest / JUnit</li>
+        <li>pytest-xdist (parallel)</li>
+        <li>Page Object Model</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Languages</p>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">CI/CD &amp; Tools</p>
+      <ul class="skill-list">
+        <li>Jenkins</li>
+        <li>GitHub Actions</li>
+        <li>Allure Reports</li>
+        <li>TestLink</li>
+        <li>Jira</li>
+        <li>Postman / Rest Assured</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">AI in QA</p>
+      <ul class="skill-list">
+        <li>LangChain LCEL</li>
+        <li>Groq · Ollama · SambaNova</li>
+        <li>LLM-as-Judge evaluation</li>
+        <li>Self-healing agents</li>
+        <li>Prompt engineering</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Process</p>
+      <ul class="skill-list">
+        <li>Agile / Scrum</li>
+        <li>Shift-left testing</li>
+        <li>Risk-based test planning</li>
+        <li>Defect triage governance</li>
+        <li>Sprint ceremonies</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Certifications</p>
+      <ul class="skill-list">
+        <li>ISTQB Foundation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <p class="section-label">Projects</p>
+  <p class="section-note">Personal AI exploration built alongside 14+ years of professional QA — applying LLMs where they genuinely reduce testing overhead.</p>
+  <div class="projects">
+
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-title">VerdictAI — LLM Evaluation Framework</div>
+        <span class="project-status status-ai">AI Project</span>
+      </div>
+      <p class="project-subtitle">Systematic, multi-judge evaluation of LLM outputs with hallucination detection &amp; regression tracking</p>
+      <p class="project-desc">Replaces subjective "does this look right?" prompt testing with structured, repeatable LLM evaluation. YAML test suites run against Groq-hosted models, scored by parallel LLM judges with hallucination detection and regression tracking — visualised in a live Streamlit dashboard you can run directly from the browser.</p>
+      <ul class="project-features">
+        <li>YAML-driven test suites — hallucination, safety, format, and RAG evaluation</li>
+        <li>Multi-judge consensus (Groq + Cerebras) with disagreement detection</li>
+        <li>Hallucination detection via claim extraction + batched NLI verification (~60% fewer tokens)</li>
+        <li>Relevance scoring using sentence-transformers cosine similarity</li>
+        <li>Regression tracking with automatic score drop detection across runs</li>
+        <li>Run live evaluations from the browser — no CLI required</li>
+        <li>Jira auto-ticket creation on consecutive failures</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">LLM Evaluation</span><span class="tag">Groq</span><span class="tag">Cerebras</span><span class="tag">LangChain</span><span class="tag">Streamlit</span><span class="tag">SQLite</span><span class="tag">Allure</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link demo" href="https://verdictai-demo.streamlit.app/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Live Demo
+        </a>
+        <a class="project-link" href="https://github.com/anant-pw/verdictai" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-title">Sentinel QA — Human-in-the-Loop AI Test Framework</div>
+        <span class="project-status status-ai">AI Project</span>
+      </div>
+      <p class="project-subtitle">Requirements → approved test plans → AI execution → Jira triage — with a human in the loop</p>
+      <p class="project-desc">Takes unstructured requirements and converts them into executed, reported, and triaged test cases end to end. A RequirementAnalyst agent generates JSON test plans; a Streamlit portal lets humans approve before any test runs. Failures trigger AI bug triage and auto-open Jira tickets with screenshots.</p>
+      <ul class="project-features">
+        <li>RequirementAnalyst agent: plain-text requirements → structured JSON test plans via LangChain LCEL</li>
+        <li>Human-in-the-Loop Streamlit portal — approval gate before execution</li>
+        <li>LLM provider failover: SambaNova → Groq → Ollama (one config line)</li>
+        <li>Parallel execution via pytest-xdist; Allure reports with per-failure AI analysis</li>
+        <li>ActionRegistry replaces page-object models — Playwright driven by AI decisions</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">LangChain LCEL</span><span class="tag">SambaNova</span><span class="tag">Groq</span><span class="tag">FastAPI</span><span class="tag">SQLite</span><span class="tag">pytest-xdist</span><span class="tag">Jira API</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/anant-pw/sentinal_qa_phase3" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-title">AI Autonomous Testing Framework</div>
+        <span class="project-status status-ai">AI Project</span>
+      </div>
+      <p class="project-subtitle">Zero-script bug detection &amp; test case generation via LLM-guided browser crawl</p>
+      <p class="project-desc">An AI testing agent that crawls any web application, detects bugs, and auto-generates test cases without a single manually written selector. The LLM decides what to explore; Playwright executes it. Supports Groq (cloud) and Ollama (fully local).</p>
+      <ul class="project-features">
+        <li>Auto-login detection — Cloudflare, multi-step login, SSO, cookie banners</li>
+        <li>Signal-gated bug detection — LLM only fires on real errors (console, XHR, DOM)</li>
+        <li>Self-healing actions with up to 5 fallback strategies on selector failure</li>
+        <li>API testing layer captures all XHR/fetch calls during crawl and validates each endpoint</li>
+        <li>Generates contextual test cases per page saved to Excel; Allure reports auto-open</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">Groq</span><span class="tag">Ollama</span><span class="tag">llava (vision)</span><span class="tag">LLM agents</span><span class="tag">Allure</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/anant-pw/playwright-groq-framework" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -306,6 +359,5 @@
 </section>
 
 <footer>© 2026 Anant Jain</footer>
-
 </body>
 </html>
